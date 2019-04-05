@@ -10,8 +10,8 @@ object pepita {
 	method volar(kms) { energia -= kms + 10 }
 	
 	// metodos nuevos
-	method estaDebil() { return completar }  // implementar
-	method estaFeliz() { return true }  // implementar
+	method estaDebil() { return energia < 50 }  // implementar
+	method estaFeliz() { return energia >50 }  // implementar
 	method cuantoQuiereVolar() { 
 		var cuanto = self.energia() / 5
 		if (energia.between(300, 400)) { cuanto += 10 }
